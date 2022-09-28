@@ -1,20 +1,25 @@
-let name = prompt ('Введите свое имя:')
-let age = +prompt('Введите год рождения:')
-let thisyear = +prompt('Введите нынешний год:')
+let name =prompt('Введите свое имя')
+let year =+prompt('Введите свой год рождения')
+let thisyear =+prompt('Введите нынешний год')
+
+
 
 function min (thisyear, year){
     return thisyear - year; 
 }
 
 
+
 let result = min(thisyear, year);
-alert(name + ' ваш возраст ' + result) 
+alert(name + ' ваш возраст ' + result)
 
 
 
 
 
-
+do {
+    var num = +prompt('Введите количество примеров')
+} while (isNaN(num) || num == 0)
 
 
 function random (min, max) {
